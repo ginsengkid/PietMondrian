@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Пит Мондриан</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="modal-background"></div>
+
+    <div class="main">
+        <div id="BG-modal" class="BG-modal">
+            <img class="portrait" src="img/Piet_Mondrian.webp" alt="Piet Mondrian">
+            <p class="Bio">Piet Mondrian is&nbsp;a&nbsp;Dutch painter who has carved a&nbsp;unique niche for himself on&nbsp;the global platform matching the likes of&nbsp;other celebrity painters. He&nbsp;is&nbsp;possibly best known for being one of&nbsp;the founders of&nbsp;the De&nbsp;Stijl, which incorporated an&nbsp;art movement that worked around abstract works, and the new art forms that were being introduced to&nbsp;the world in&nbsp;the early 20th century. The movement was also based on&nbsp;the reductive theory; which took a&nbsp;larger scale image, and brought it&nbsp;to&nbsp;life on&nbsp;the canvas, in&nbsp;architectural works, and in&nbsp;sculpture forms, and in&nbsp;the form of&nbsp;graphic arts as&nbsp;well.</p>
+            <h1>His most famous works:</h1>
+            <div class="first-work">
+                <img class="bio-img" src="img/Piet_Mondriaan,_1921_-_Composition_en_rouge,_jaune,_bleu_et_noir.webp">
+            </div>
+            <div class="second-work">
+                <img class="bio-img" src="img/Composition_A_by_Piet_Mondrian_Galleria_Nazionale_d'Arte_Moderna_e_Contemporanea.webp">
+            </div>
+            <div class="third-work">
+                <img class="bio-img" src="img/piet_mondrian_composition_yellow_red_black_blue_1920.webp">
+            </div>
+
+        </div>
+
+        <div class="painting">
+            <div class="left-top-white"></div>
+            <div class="red"></div>
+            <div class="left-middle-white"></div>
+            <div class="blue"></div>
+            <div class="bottom-middle-white"></div>
+            <div class="white-right"></div>
+            <div class="small-white-right"></div>
+            <div class="yellow"></div>
+            <div class="small-yellow"></div>
+        </div>
+
+        <div id="btn" class="button">A<br>b<br>o<br>u<br>t <br><br><br> P<br>i<br>e<br>t <br><br><br> M<br>o<br>n<br>d<br>r<br>i<br>a<br>n</div>
+
+        <script >
+            var mybtn = document.getElementById("btn");
+            var modal = document.getElementById("BG-modal");
+            var span = document.getElementById("modal-background");
+
+            mybtn.onclick = function() {
+                modal.style.display = "block";
+                span.style.display = "block";
+            }
+
+            window.onclick = function(event) {
+                if (event.target === span) {
+                    modal.style.display = "none";
+                    span.style.display = "none";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
