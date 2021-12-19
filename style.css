@@ -86,10 +86,11 @@ h1{
     grid-template-columns: 272fr 39fr 820fr 40fr 96fr 6fr;
     grid-template-rows: 344fr 71fr 422fr 34fr 115fr 27fr 27fr 118fr;
     grid-gap: 0;
-    background: #081312;
 }
 
 .left-top-white{
+    grid-column: 1;
+    grid-row: 1;
     background: #e6e6e5;
 }
 
@@ -102,6 +103,7 @@ h1{
 .left-middle-white{
     background: #e6e6e5;
     grid-row: 3/4;
+    grid-column: 1;
 }
 
 .bottom-middle-white{
@@ -123,6 +125,7 @@ h1{
 }
 
 .blue{
+    grid-column: 1;
     grid-row: 5/9;
     background: #225b9a;
 }
@@ -139,14 +142,21 @@ h1{
     background: #e8d777;
 }
 
+.black_square{
+    background: #081312;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: -1;
+}
+
 
 .button{
     -webkit-user-select: none;
     float: left;
-    width: 40px;
+    width: 30px;
     margin-left: 40px;
-    padding: 100px 25px;
-    height: 600px;
+    padding: 51px 25px;
+    height: 700px;
     background: #afafaf;
     text-align: center;
     vertical-align: center;
@@ -155,6 +165,10 @@ h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: pre;
+
 }
 
 .button:hover{
